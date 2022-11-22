@@ -428,12 +428,22 @@
             </li>
           </ul>
         </div>
-        <form class="footer-subscribe">
-          <p class="title">Підпишіться на розсилку</p>
-          <div class="subscribe-wrap">
-            <input type="email" name="subscribe" placeholder="E-mail" class="input-subscribe" />
-            <button type="button" class="button primary footer-btn">Підписатися</button>
-          </div>
+        <form name="subscribe" class="footer-subscribe">
+          <p class="title">Підписатися</p>
+          <label for="user_email"></label>
+          <input
+            type="email"
+            name="email"
+            id="user_email"
+            placeholder="E-mail"
+            class="subscribe-input"
+          />
+          <button type="button" class="button primary hero-btn footer-btn">
+            Підписатися
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#send"></use>
+            </svg>
+          </button>
         </form>
       </div>
     </footer>
