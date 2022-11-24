@@ -527,7 +527,7 @@ ul {
 }
 
 .subscribe-input {
-  width: 358px;
+  min-width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -536,6 +536,11 @@ ul {
   background-color: var(--footer-color);
   padding: 15px 0 15px 16px;
   margin-right: 12px;
+}
+
+.subscribe-input:hover,
+.subscribe-input:focus {
+  border-color: var(--accent-color);
 }
 
 /* --------------- BUTTON --------------- */
@@ -596,6 +601,7 @@ ul {
   padding: 10px 28px;
   display: inline-flex;
   align-items: center;
+  width: 200px;
 }
 
 .footer-btn>.icon {
@@ -729,6 +735,7 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 40px;
   width: 528px;
   height: 581px;
   background-color: var(--white-color);
@@ -748,4 +755,33 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 75px;
   cursor: pointer;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 0.86;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-bottom: 30px;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  margin-bottom: 28px;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
